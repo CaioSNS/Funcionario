@@ -1,0 +1,16 @@
+
+public class TesteFuncionario {
+
+	public static void main(String[] args) {
+		
+		Funcionario Caio = new Funcionario();
+		Caio.setNome("Caio Sakaguti");
+		Caio.setCpf("38366418871");
+		Caio.setSalario(3200.00);
+		
+		
+		System.out.println(Caio.getNome());
+		System.out.println(Caio.getBonificacao());
+		
+	}
+}
