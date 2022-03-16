@@ -3,6 +3,10 @@ public class Gerente extends Funcionario {
 	
 	private int senha;
 	
+	public void setSenha (int senha) {
+	    this.senha = senha;	
+		}
+	
 	
 	public boolean autentica(int senha) {
 		if(this.senha == senha ) {
@@ -11,17 +15,10 @@ public class Gerente extends Funcionario {
 		 return false;
 	}
 	
-	public void setSenha (int senha) {
-    this.senha = senha;	
-	}
-	
-	public int getSenha()  {
-		return senha;
-	}
-	
-
+			
         public double getBonificacao() {
-		return super.salario;
+        System.out.println("Chamando o método de Bonificacao do Gerente ");
+	return super.getBonificacao() + super.getSalario();
 		}
 	
 }
